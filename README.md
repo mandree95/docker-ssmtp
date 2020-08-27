@@ -4,3 +4,12 @@ This docker image can be used to send mails to external smtp servers that requir
 $ echo "Message Body Here" | mail -s "Subject Here" user@example.com -A backup.zip
 ```
 A mail with the subject `Subject Here`, `Message Body Here` as the body and file named `backup.zip` attached will be sent to `user@example.com`.
+
+## Prerequisites/Configuration
+| Environment Variable | Example        | Default value | Required |
+|----------------------|----------------|---------------|----------|
+| HOST                 | smtp.gmail.com |               | Yes      |
+| PORT                 | 587            |               | Yes      |
+| AUTH_USER            | xyz@gmail.com  |               | Yes      |
+| AUTH_PASS            | xyz            |               | Yes      |
+| TLS                  | YES (or NO)    | NO            | No       |
