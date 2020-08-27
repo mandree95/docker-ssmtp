@@ -24,7 +24,7 @@ ENV SSMTP_CONF='/etc/ssmtp'
 # Install ssmtp #
 # ------------- #
 RUN apk update \
-  && apk add ssmtp mailutils \
+  && apk add ssmtp \
   && mkdir -p /opt/mail
 
 # -------------------- #
